@@ -1,0 +1,121 @@
+import React, { useState, useEffect } from 'react';
+import quizData from '../data/ox_quiz_data.json';
+
+const shuffleArray = (array) => {
+  const copied = [...array];
+  for (let i = copied.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copied[i], copied[j]] = [copied[j], copied[i]];
+  }
+  return copied;
+};
+
+const QuizPage = () => {
+
+  const [quizList, setQuizList] = useState([]);
+  const [currentQuiz, setCurrentQuiz] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showResult, setShowResult] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(null);
+  const [finished, setFinished] = useState(false);
+  const [completed, setCompleted] = useState(false); // 모든 문제 완료 여부
+  const [num, setNum] = useState(0); // 점수
+
+
+  useEffect(() => {
+    const shuffled = shuffleArray(quizData);
+    setQuizList(shuffled);
+    setCurrentQuiz(shuffled[0]);
+    setCurrentIndex(0);
+  }, []);
+
+  const handleAnswer = (userAnswer) => {
+    const correct = userAnswer === currentQuiz.answer;
+    setIsCorrect(correct);
+    setShowResult(true);
+
+    if (correct) {
+      setNum((prev) => prev + 1);
+    } else {
+      setFinished(true);
+    }
+  };
+
+  const goToNextQuiz = () => {
+    const nextIndex = currentIndex + 1;
+
+    if (nextIndex >= quizList.length) {
+      setCompleted(true); // 모든 문제를 다 풀었을 경우
+      return;
+    }
+
+    if (finished) {
+      setNum(0); // 오답 이후 재시작 시 점수 초기화
+    }
+
+    setCurrentIndex(nextIndex);
+    setCurrentQuiz(quizList[nextIndex]);
+    setShowResult(false);
+    setIsCorrect(null);
+    setFinished(false);
+  };
+
+  const restartQuiz = () => {
+    alert('모든 문제를 다 풀었습니다. 퀴즈를 새로 시작합니다.');
+    const reshuffled = shuffleArray(quizData);
+    setQuizList(reshuffled);
+    setCurrentQuiz(reshuffled[0]);
+    setCurrentIndex(0);
+    setNum(0);
+    setShowResult(false);
+    setIsCorrect(null);
+    setFinished(false);
+    setCompleted(false);
+  };
+
+  if (!currentQuiz) return <div>로딩 중...</div>;
+
+  return (
+    <div>
+      <h1>OX 퀴즈</h1>
+      <p>현재 점수: {num}</p>
+
+      {completed ? (
+        <div>
+          <p>모든 문제를 다 풀었습니다.</p>
+          <button onClick={restartQuiz}>다시 시작</button>
+        </div>
+      ) : (
+        <>
+          <p>{currentQuiz.question}</p>
+
+          {!showResult && (
+            <div>
+              <button onClick={() => handleAnswer(true)}>O</button>
+              <button onClick={() => handleAnswer(false)}>X</button>
+            </div>
+          )}
+
+          {showResult && (
+            <div>
+              {isCorrect ? (
+                <>
+                  <p>정답입니다!</p>
+                  <button onClick={goToNextQuiz}>다음 문제</button>
+                </>
+              ) : (
+                <>
+                  <p>오답입니다!</p>                  
+                  {currentQuiz.note && <p>{currentQuiz.note}</p>}
+                  <button onClick={goToNextQuiz}>다시 시작</button>
+                </>
+              )}
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  );
+};
+
+export default QuizPage;

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "마비노기모바일은 2025년 3월 27일에 정식 출시되었다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 2,
+    "question": "마비노기모바일 사전캐릭터생성은 2025년 3월 26일이다?",
+    "answer": false,
+    "note": "3월 25일"
+  },
+  {
+    "id": 3,
+    "question": "공식설정상 나오가 좋아하는것은 빵과 꽃이다?",
+    "answer": false,
+    "note": "꽃 -> 동물"
+  },
+  {
+    "id": 4,
+    "question": "나오의 풀네임은 나오 마리오타 프라이데이 이다?",
+    "answer": false,
+    "note": "프라이데이 -> 프라데이리"
+  },
+  {
+    "id": 5,
+    "question": "스텔라픽을 받으면 매력이 1 상승한다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 6,
+    "question": "탈것 중 블랙아머 서러브레드는 이동속도를 80% 증가시켜준다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 7,
+    "question": "\"게임이 너무 쉬우면 재미없습니다\" 간판은 티르코네일 학교에 있다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 8,
+    "question": "대모험의시작(다그다) 퀘스트 시작지점은 티르코네일 언덕이다?",
+    "answer": false,
+    "note": "알비던전 문게이트"
+  },
+  {
+    "id": 9,
+    "question": "음식 '흰살생선 뫼니에르'는 10초마다 체력을 1% 회복한다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 10,
+    "question": "치명타비약과 상급치명타비약의 판매가격은 같다?",
+    "answer": false,
+    "note": "치비30골드 / 상치비50골드"
+  },
+  {
+    "id": 11,
+    "question": "레이드 글라스기브넨_입문 에서의 부활제한은 총 10회이다?",
+    "answer": false,
+    "note": "10회 -> 20회"
+  },
+  {
+    "id": 12,
+    "question": "14강 -> 15강 강화중 촉매재를 넣었을때 실패 할 경우 강화포인트가 3% 오른다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 13,
+    "question": "뛰어난회복물약' 제작시 물약조제 생활경험치가 180 상승한다?",
+    "answer": false,
+    "note": "180 -> 150"
+  },
+  {
+    "id": 14,
+    "question": "피해감소비약과 상급피해감소비약의 판매가격은 같다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 15,
+    "question": "\"결핍\" 룬은 보유자원이 50%미만인경우 공격력을 9% 올려주는 마법사 전용룬이다?",
+    "answer": false,
+    "note": "마법사룬 -> 공용룬"
+  },
+  {
+    "id": 16,
+    "question": "유니크장비 황금의손 의 판매가격은 816,556 골드이다?",
+    "answer": false,
+    "note": "816,556 -> 816,665"
+  },
+  {
+    "id": 17,
+    "question": "낚시레벨 29->30에 필요한 경험치는 23,280 이다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 18,
+    "question": "요리 사과생크림케이크 에는 생크림이 2개 들어간다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 19,
+    "question": "모험가패스에서 얻을수있는 투박한스타프리즘은 총 6개이다?",
+    "answer": false,
+    "note": "6개 -> 3개"
+  },
+  {
+    "id": 20,
+    "question": "서큐버스레이드 보상인 꿈을비추는 거울조각을 모자로 교환할시 필요한 갯수는 4개이다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 1,
+    "question": "브로콜리의 원산지는 지중해 동부이다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 2,
+    "question": "소설 ‘동백꽃’ 속 화자는 대지주의 아들이다?",
+    "answer": false,
+    "note": "소작농의 아들"
+  },
+  {
+    "id": 3,
+    "question": "환타는 일본에서 최초로 출시한 탄산음료이다?",
+    "answer": false,
+    "note": "대전기 나치독일에서 개발"
+  },
+  {
+    "id": 4,
+    "question": "패션 디자이너 코코 샤넬은 여성이다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 5,
+    "question": "감자와 토마토는 같은 과에 속하는 식물이다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 6,
+    "question": "몸뻬바지의 ‘몸뻬’는 순우리말이다?",
+    "answer": false,
+    "note": null
+  },
+  {
+    "id": 7,
+    "question": "우럭은 등푸른생선이다?",
+    "answer": false,
+    "note": null
+  },
+  {
+    "id": 8,
+    "question": "첨성대는 고려시대에 지어진 천문대이다?",
+    "answer": false,
+    "note": null
+  },
+  {
+    "id": 9,
+    "question": "와인은 자칫하면 식초로 바뀐다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 10,
+    "question": "암컷 모기만 피를 빤다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 11,
+    "question": "거미는 곤충에 속하지 않는다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 12,
+    "question": "인간의 뼈는 성인 기준으로 총 206개이다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 13,
+    "question": "브로콜리는 여러해살이 식물이다?",
+    "answer": false,
+    "note": "한해살이 식물"
+  },
+  {
+    "id": 14,
+    "question": "자연계에 파란색 꽃이 존재한다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 15,
+    "question": "지구에서 가장 깊은 해구는 쿠릴-캄차카 해구이다?",
+    "answer": false,
+    "note": "마리아나해구가 가장 깊은 해구"
+  },
+  {
+    "id": 16,
+    "question": "폭염경보는 일 최고 체감온도가 35도 이상인 상태가 2일 이상 지속될 것으로 예상될 때 발령된다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 17,
+    "question": "세계에서 가장 긴 강은 나일강이다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 18,
+    "question": "일개미들은 모두 암컷이다?",
+    "answer": true,
+    "note": null
+  },
+  {
+    "id": 19,
+    "question": "바티칸의 국가 원수는 교황이 아니다?",
+    "answer": false,
+    "note": "교황 맞음"
+  },
+  {
+    "id": 20,
+    "question": "스님은 결혼을 할 수 없다?",
+    "answer": false,
+    "note": "종파에따라 다름."
+  }
+]
