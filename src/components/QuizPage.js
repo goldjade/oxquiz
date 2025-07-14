@@ -77,43 +77,43 @@ const QuizPage = () => {
 
   return (
     <div>
-      <h1>OX 퀴즈</h1>
-      <p>현재 점수: {num}</p>
 
       {completed ? (
         <div>
-          <p>모든 문제를 다 풀었습니다.</p>
+          <p className='text-area'>모든 문제를 다 풀었습니다.</p>
           <button onClick={restartQuiz}>다시 시작</button>
         </div>
       ) : (
         <>
-          <p>{currentQuiz.question}</p>
+          <p className='text-area'>{currentQuiz.question}</p>
 
           {!showResult && (
-            <div>
-              <button onClick={() => handleAnswer(true)}>O</button>
-              <button onClick={() => handleAnswer(false)}>X</button>
+            <div className='btn-wrap'>
+              <button className='o-btn' onClick={() => handleAnswer(true)}>O</button>
+              <button className='x-btn' onClick={() => handleAnswer(false)}>X</button>
             </div>
           )}
 
           {showResult && (
-            <div>
+            <div className=''>
               {isCorrect ? (
                 <>
-                  <p>정답입니다!</p>
+                  <p className='green-text'>정답입니다!</p>
                   <button onClick={goToNextQuiz}>다음 문제</button>
                 </>
               ) : (
-                <>
-                  <p>오답입니다!</p>                  
-                  {currentQuiz.note && <p>{currentQuiz.note}</p>}
+                <div>
+                  <p className='red-text'>오답입니다!</p>          
+                  {currentQuiz.note && <p className='note'>
+                    {currentQuiz.note}</p>}
                   <button onClick={goToNextQuiz}>다시 시작</button>
-                </>
+                </div>
               )}
             </div>
           )}
         </>
       )}
+      <p className='count'>현재 점수: {num}</p>
     </div>
   );
 };
