@@ -41,24 +41,26 @@ const QuizPage = () => {
     }
   };
 
-  const goToNextQuiz = () => {
-    const nextIndex = currentIndex + 1;
+const goToNextQuiz = () => {
+  const nextIndex = currentIndex + 1;
 
-    if (nextIndex >= quizList.length) {
-      setCompleted(true); // 모든 문제를 다 풀었을 경우
-      return;
-    }
+  // 오답 상태에서 다시 시작할 경우 → 점수 초기화
+  if (finished) {
+    setNum(0);
+  }
 
-    if (finished) {
-      setNum(0); // 오답 이후 재시작 시 점수 초기화
-    }
+  // "정답을 맞추며 마지막 문제까지 도달한 경우"만 completed 처리
+  if (nextIndex >= quizList.length && !finished) {
+    setCompleted(true);
+    return;
+  }
 
-    setCurrentIndex(nextIndex);
-    setCurrentQuiz(quizList[nextIndex]);
-    setShowResult(false);
-    setIsCorrect(null);
-    setFinished(false);
-  };
+  setCurrentIndex(nextIndex);
+  setCurrentQuiz(quizList[nextIndex]);
+  setShowResult(false);
+  setIsCorrect(null);
+  setFinished(false);
+};
 
   const restartQuiz = () => {
     alert('모든 문제를 다 풀었습니다. 퀴즈를 새로 시작합니다.');
