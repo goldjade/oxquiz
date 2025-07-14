@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/oxquiz/static/css/main.859f927c.css",
+    "main.js": "/oxquiz/static/js/main.7b466ca4.js",
+    "index.html": "/oxquiz/index.html",
+    "main.859f927c.css.map": "/oxquiz/static/css/main.859f927c.css.map",
+    "main.7b466ca4.js.map": "/oxquiz/static/js/main.7b466ca4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.859f927c.css",
+    "static/js/main.7b466ca4.js"
+  ]
+}
