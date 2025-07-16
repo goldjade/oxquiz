@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/oxquiz/static/css/main.3140a1f0.css",
-    "main.js": "/oxquiz/static/js/main.8db278a1.js",
+    "main.js": "/oxquiz/static/js/main.5a260f75.js",
     "index.html": "/oxquiz/index.html",
     "main.3140a1f0.css.map": "/oxquiz/static/css/main.3140a1f0.css.map",
-    "main.8db278a1.js.map": "/oxquiz/static/js/main.8db278a1.js.map"
+    "main.5a260f75.js.map": "/oxquiz/static/js/main.5a260f75.js.map"
   },
   "entrypoints": [
     "static/css/main.3140a1f0.css",
-    "static/js/main.8db278a1.js"
+    "static/js/main.5a260f75.js"
   ]
 }
